@@ -1,6 +1,6 @@
 command: "~/.kwm/screens"
 
-refreshFrequency: 100 # ms
+refreshFrequency: 1000 # ms
 
 render: (output) ->
   " <div class='kwmmode'></div>"
