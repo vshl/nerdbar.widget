@@ -3,13 +3,24 @@ command: "ESC=`printf \"\e\"`; ps -A -o %mem | awk '{s+=$1} END {print \"\" s}'"
 refreshFrequency: 30000 # ms
 
 render: (output) ->
-  "mem <span>#{output}</span>"
+  """
+  <div class="mem">
+    <span></span>
+    <span class="icon"></span>
+  </div>
+  """
+
+update: (output, el) ->
+    $(".mem span:first-child", el).text("  #{output}")
+    $icon = $(".mem span.icon", el)
+    $icon.removeClass().addClass("icon")
+    $icon.addClass("fa fa-hdd-o")
 
 style: """
   -webkit-font-smoothing: antialiased
   color: #ffffff
   font: 10px mononoki 
-  right: 70px
+  right: 247px
   top: 6px
   span
     color: #ffffff
