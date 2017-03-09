@@ -21,7 +21,7 @@ style: """
   color: #ffffff
   text-align: center
   font: 10px mononoki 
-  right: 342px
+  right: 410px
   top: 6px
   span
     color: #ffffff
