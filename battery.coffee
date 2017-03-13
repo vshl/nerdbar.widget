@@ -33,7 +33,7 @@ style: """
   -webkit-font-smoothing: antialiased
   font: 10px mononoki 
   top: 6px
-  right: 135px
+  right: 137px
   color: #ffffff
   span
     color: #ffffff
