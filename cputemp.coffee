@@ -1,6 +1,6 @@
 command: "/usr/local/bin/istats cpu temperature --no-graphs | awk '{print $3}'"
 
-refreshFrequency: 10000 # ms
+refreshFrequency: 20000 # ms
 
 render: (output) ->
     """
