@@ -1,4 +1,4 @@
-command: "/usr/local/bin/istats cpu temperature --no-graphs | awk '{print $3}'"
+command: "$HOME/.rbenv/shims/istats cpu temperature --no-graphs | awk '{print $3}'"
 
 refreshFrequency: 20000 # ms
 
